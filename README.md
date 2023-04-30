@@ -15,5 +15,4 @@ Utiliser le framework Python fastApi pour l’API ( le tout doit fonctionner ave
 run `pip install -r dependency.txt`
 
 # Start the server
-
 run `uvicorn index:app --reload`

@@ -7,7 +7,7 @@ import bcrypt
 from config.database import neolegal_db
 from models.user import User
 from schemas.user import usersList, usersEntity
-from auth.jwt_hundler import get_token, check_token
+from app.auth.jwt_hundler import get_token, check_token
 from app.filter.validate import validate_schema
 from app.pdf.pdf_generator import generate_pdf
 
