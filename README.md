@@ -10,3 +10,10 @@ Utiliser le framework Python fastApi pour l’API ( le tout doit fonctionner ave
 - Le endpoint /users?filter={‘username’ :’sid’} peut être filtrer par username et retourne les usernames qui reflètent le filtre
 - Le endpoint /users?download=pdf retourne un fichier pdf de la liste des users ( username, firstname, lastname )
 
+# Installation
+
+run `pip install -r dependency.txt`
+
+# Start the server
+
+run `uvicorn index:app --reload`
