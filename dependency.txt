@@ -1,0 +1,9 @@
+pymongo
+fastapi
+unicorn
+bcrypt
+pyjwt
+python-decouple
+jsonschema
+reportlab
+tabula-py
