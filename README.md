@@ -16,3 +16,6 @@ run `pip install -r dependency.txt`
 
 # Start the server
 run `uvicorn index:app --reload`
+
+# Postman collection for test
+https://www.postman.com/restless-flare-429526/workspace/neolegal/collection/20410822-ce82a678-0271-4e33-bac1-9f2df29f0873?action=share&creator=20410822
