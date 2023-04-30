@@ -1,6 +1,6 @@
 pymongo
 fastapi
-unicorn
+uvicorn
 bcrypt
 pyjwt
 python-decouple
