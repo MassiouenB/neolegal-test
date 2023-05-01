@@ -21,8 +21,11 @@ users_col = neolegal_db['users']
 async def authenticate(user: User):
     user_db = users_col.find_one({"username": user.username})
     password = user.password.encode('utf-8')
-    isValidPassword = bcrypt.checkpw(password, user_db['password'])
-    if user_db and isValidPassword:
+    isValidPassword = False
+    if user_db:
+        isValidPassword = bcrypt.checkpw(password, user_db['password'])
+        
+    if isValidPassword:
         # Créer le JWT
         token = get_token(user.username)
         return JSONResponse(content={"access token": token})
